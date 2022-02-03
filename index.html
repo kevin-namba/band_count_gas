@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  
+  function loadingProcess(){
+    //サーバーからスプレッドシートのデータを取得する
+    google.script.run.withSuccessHandler(dispSpreadsheet).GetSpreadsheet();
+  }
+  $(document).ready( function(){
+  // ページ読み込み時に実行したい処理
+    google.script.run
+        .withSuccessHandler( dispSpreadsheet )
+        .GetSpreadsheet(); 
+  });
+  
+  //取得したデータを表示する
+  function dispSpreadsheet(member_and_count_list){
+    var htmlTable = '<table id="tableSSData" border=1>';
+    for(var row = 0; row < member_and_count_list.length; row++){
+      htmlTable += '<tr>';
+      htmlTable += '<td>' + member_and_count_list[row]['name'] + '</td>' + '<td>' + member_and_count_list[row]['count'] + '</td>';
+      htmlTable += '</tr>';
+    }
+    htmlTable += '</table>';
+    console.log(htmlTable);
+    document.getElementById("dispArea").innerHTML = htmlTable; 
+  }
+  </script>
+  
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <div id='dispArea'>
+    </div>
+  </body>
+</html>
