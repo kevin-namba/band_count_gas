@@ -1,5 +1,5 @@
 //https://docs.google.com/spreadsheets/d/{{ココがspreadsheetId}}/
-var spreadsheetId = '1wPVbWYVqlVAbuzHFMgxsCDT1hJYBe1kxjJwZrKDFyYA';
+var spreadsheetId = '';
 //シートの名前，デフォルトは'フォームの回答 1'
 var sheetname = 'フォームの回答 1'
 
