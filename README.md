@@ -15,8 +15,6 @@ https://qiita.com/cazimayaa/items/224daebe536799e5a8a2
 を参考にして，コード.gsの21行目のgetRangeの引数を変更すること．
  
 ## 4.	使用方法
-https://drive.google.com/drive/folders/1l06kFz_zbbMWMxmNJZVWZrHXJCiB8wWZ?usp=sharing
-よりhomes_sumを選択する．
 (i)コード.gsのスプレッドシートのIDとシート名を入力する．
 (ii)デプロイ→新しいデプロイを作成→種類の選択→ウェブアプリ
 (iii)次のユーザーで実行(自分のメールアドレス)，アクセスできるユーザー(全員)
